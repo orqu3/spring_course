@@ -12,8 +12,7 @@ import java.util.Random;
 @Component
 public class ProductRepository {
 
-    @Value("5")
-    private int listSize;
+    private final int listSize = 5;
     private List<Product> productList;
     private final Random random = new Random();
 

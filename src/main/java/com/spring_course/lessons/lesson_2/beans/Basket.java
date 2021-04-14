@@ -17,8 +17,7 @@ public class Basket {
     private final List<Product> basket = new ArrayList<>();
     private final Random random = new Random();
 
-    @Value("5")
-    private int listSize;
+    private final int listSize = 5;
 
     public Basket(ProductRepository productRepository) {
         this.productRepository = productRepository;

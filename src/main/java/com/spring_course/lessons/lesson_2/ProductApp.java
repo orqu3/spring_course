@@ -20,8 +20,8 @@ public class ProductApp {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    private static final ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
-    private static final Basket basket = context.getBean(Basket.class);
+    private static ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+    private static Basket basket = context.getBean(Basket.class);
 
     public static void main(String[] args) {
         boolean quit = false;
